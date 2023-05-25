@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="css/styles.css">
@@ -502,10 +502,10 @@
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Most recent work</span>
 
-                <div class="portfolio__container container">
-                    <div>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
                         <!-- Portfolio 1 -->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="img/prom_pfp.jpg" alt="" class="portfolio_img">
 
                             <div class="portfolio__data">
@@ -513,13 +513,13 @@
                                 <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptates, corrupti similique quidem ullam ipsa officia repellat iste fugiat nam iusto obcaecati, eius dolore dolores ratione doloribus magni eos! Quo?</p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
-                                    <i class="uil uil-arrow-right button-icon"></i>
+                                    <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Portfolio 2 -->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="img/prom_pfp.jpg" alt="" class="portfolio_img">
 
                             <div class="portfolio__data">
@@ -527,11 +527,15 @@
                                 <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptates, corrupti similique quidem ullam ipsa officia repellat iste fugiat nam iusto obcaecati, eius dolore dolores ratione doloribus magni eos! Quo?</p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
-                                    <i class="uil uil-arrow-right button-icon"></i>
+                                    <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </section>
 
@@ -560,7 +564,7 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="js/main.js"></script>
